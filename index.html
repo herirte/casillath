@@ -125,7 +125,7 @@
 
     <p>cotiza tus links acá ( ˶ᵔ ᵕ ᵔ˶ ) ♡</p>
 
-    <input type="number" id="php" placeholder="Ej: 150">
+    <input type="number" id="thb" placeholder="Ej: 150">
 
     <button onclick="calcular()">Cotizar</button>
 
@@ -141,12 +141,12 @@
 
 function calcular() {
 
-  const tasaCambio = 32;
+  const tasaCambio = 53.20;
 
-  const php = parseFloat(document.getElementById("php").value);
+  const thb = parseFloat(document.getElementById("thb").value);
 
 
-  if (isNaN(php)) {
+  if (isNaN(thb)) {
 
     document.getElementById("resultado").innerText =
     "por favor, ingresá un número válido";
@@ -158,7 +158,7 @@ function calcular() {
   }
 
 
-  const ars = php * tasaCambio;
+  const ars = thb * tasaCambio;
 
 
   document.getElementById("resultado").innerText =
